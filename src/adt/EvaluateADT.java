@@ -1,5 +1,7 @@
 package adt;
 
+import defination.PostfixEvaluator;
+
 import java.util.Deque;
 
 public interface EvaluateADT {
@@ -7,5 +9,5 @@ public interface EvaluateADT {
 
     boolean isOperator(char ch);
 
-    String eval(String expression);
+    String eval(String expression) throws PostfixEvaluator.SyntaxErrorException;
 }
