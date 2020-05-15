@@ -7,3 +7,9 @@ the stack. When an operator is read, the top two operands are popped, the operat
 is performed on its operands, and the result is pushed back onto the stack. The final
 result should be the only value remaining on the stack when the end of the expression
 is reached.
+
+Methods          | Bhavior
+--------           |  ---------------
+public static int eval(String expression)  | Returns the value of expression
+private static int evalOp(char op,Deque<Integer> operandStack) | Pops two operands and applies operator op to its operands, returning the                                                                            result
+private static boolean isOperator(char ch) | Returns true if ch is an operator symbol
