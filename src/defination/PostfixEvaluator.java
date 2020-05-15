@@ -29,7 +29,8 @@ public class PostfixEvaluator implements EvaluateADT {
 
     @Override
     public boolean isOperator(char ch) {
-        return false;
+        String OPERATORS = "+-*/";
+        return OPERATORS.indexOf(ch) != -1;
     }
 
     @Override
